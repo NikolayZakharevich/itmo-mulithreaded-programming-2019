@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class LockFreedomTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class LockFreedomTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; LockFreedomTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.016s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="testLockFreedom"></a>
+<h3 class="failures">testLockFreedom</h3>
+<span class="code">
+<pre>java.lang.AssertionError: expected:&lt;0&gt; but was:&lt;26&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at kotlin.test.junit.JUnitAsserter.assertEquals(JUnitSupport.kt:32)
+	at kotlin.test.AssertionsKt__AssertionsKt.assertEquals(Assertions.kt:51)
+	at kotlin.test.AssertionsKt.assertEquals(Unknown Source)
+	at kotlin.test.AssertionsKt__AssertionsKt.assertEquals$default(Assertions.kt:50)
+	at kotlin.test.AssertionsKt.assertEquals$default(Unknown Source)
+	at BankRunner.runOperation(BankRunner.kt:25)
+	at LockFreedomTest$testLockFreedom$$inlined$repeat$lambda$1.invokeSuspend(LockFreedomTest.kt:15)
+	at LockFreedomTest$testLockFreedom$$inlined$repeat$lambda$1.invoke(LockFreedomTest.kt)
+	at kotlinx.atomicfu.LockFreedomTestEnvironment$TestThread.callOperation(LockFreedomTestEnvironment.kt:304)
+	at kotlinx.atomicfu.LockFreedomTestEnvironment$TestThread.run(LockFreedomTestEnvironment.kt:233)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">testLockFreedom</td>
+<td class="failures">1.016s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>=== LockFreedomTest
+--- 0: Performed 0 operations
+Uncaught exception in thread Thread[LockFreedomTest-1,5,main]
+java.lang.AssertionError: expected:&lt;0&gt; but was:&lt;26&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at kotlin.test.junit.JUnitAsserter.assertEquals(JUnitSupport.kt:32)
+	at kotlin.test.AssertionsKt__AssertionsKt.assertEquals(Assertions.kt:51)
+	at kotlin.test.AssertionsKt.assertEquals(Unknown Source)
+	at kotlin.test.AssertionsKt__AssertionsKt.assertEquals$default(Assertions.kt:50)
+	at kotlin.test.AssertionsKt.assertEquals$default(Unknown Source)
+	at BankRunner.runOperation(BankRunner.kt:25)
+	at LockFreedomTest$testLockFreedom$$inlined$repeat$lambda$1.invokeSuspend(LockFreedomTest.kt:15)
+	at LockFreedomTest$testLockFreedom$$inlined$repeat$lambda$1.invoke(LockFreedomTest.kt)
+	at kotlinx.atomicfu.LockFreedomTestEnvironment$TestThread.callOperation(LockFreedomTestEnvironment.kt:304)
+	at kotlinx.atomicfu.LockFreedomTestEnvironment$TestThread.run(LockFreedomTestEnvironment.kt:233)
+Uncaught exception in thread Thread[LockFreedomTest-3,5,main]
+java.lang.AssertionError: expected:&lt;0&gt; but was:&lt;45&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at kotlin.test.junit.JUnitAsserter.assertEquals(JUnitSupport.kt:32)
+	at kotlin.test.AssertionsKt__AssertionsKt.assertEquals(Assertions.kt:51)
+	at kotlin.test.AssertionsKt.assertEquals(Unknown Source)
+	at kotlin.test.AssertionsKt__AssertionsKt.assertEquals$default(Assertions.kt:50)
+	at kotlin.test.AssertionsKt.assertEquals$default(Unknown Source)
+	at BankRunner.runOperation(BankRunner.kt:25)
+	at LockFreedomTest$testLockFreedom$$inlined$repeat$lambda$1.invokeSuspend(LockFreedomTest.kt:15)
+	at LockFreedomTest$testLockFreedom$$inlined$repeat$lambda$1.invoke(LockFreedomTest.kt)
+	at kotlinx.atomicfu.LockFreedomTestEnvironment$TestThread.callOperation(LockFreedomTestEnvironment.kt:304)
+	at kotlinx.atomicfu.LockFreedomTestEnvironment$TestThread.run(LockFreedomTestEnvironment.kt:233)
+Uncaught exception in thread Thread[LockFreedomTest-2,5,main]
+java.lang.AssertionError: expected:&lt;0&gt; but was:&lt;45&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at kotlin.test.junit.JUnitAsserter.assertEquals(JUnitSupport.kt:32)
+	at kotlin.test.AssertionsKt__AssertionsKt.assertEquals(Assertions.kt:51)
+	at kotlin.test.AssertionsKt.assertEquals(Unknown Source)
+	at kotlin.test.AssertionsKt__AssertionsKt.assertEquals$default(Assertions.kt:50)
+	at kotlin.test.AssertionsKt.assertEquals$default(Unknown Source)
+	at BankRunner.runOperation(BankRunner.kt:25)
+	at LockFreedomTest$testLockFreedom$$inlined$repeat$lambda$1.invokeSuspend(LockFreedomTest.kt:15)
+	at LockFreedomTest$testLockFreedom$$inlined$repeat$lambda$1.invoke(LockFreedomTest.kt)
+	at kotlinx.atomicfu.LockFreedomTestEnvironment$TestThread.callOperation(LockFreedomTestEnvironment.kt:304)
+	at kotlinx.atomicfu.LockFreedomTestEnvironment$TestThread.run(LockFreedomTestEnvironment.kt:233)
+--- 1: Performed 249 operations
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.2.1</a> at 17 янв. 2020 г., 20:48:16</p>
+</div>
+</div>
+</body>
+</html>

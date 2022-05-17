@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="LockFreedomTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2020-01-17T17:48:14" hostname="nzakharevich-nb.local" time="1.016">
+  <properties/>
+  <testcase name="testLockFreedom" classname="LockFreedomTest" time="1.016">
+    <failure message="java.lang.AssertionError: expected:&lt;0&gt; but was:&lt;26&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;0&gt; but was:&lt;26&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at kotlin.test.junit.JUnitAsserter.assertEquals(JUnitSupport.kt:32)
+	at kotlin.test.AssertionsKt__AssertionsKt.assertEquals(Assertions.kt:51)
+	at kotlin.test.AssertionsKt.assertEquals(Unknown Source)
+	at kotlin.test.AssertionsKt__AssertionsKt.assertEquals$default(Assertions.kt:50)
+	at kotlin.test.AssertionsKt.assertEquals$default(Unknown Source)
+	at BankRunner.runOperation(BankRunner.kt:25)
+	at LockFreedomTest$testLockFreedom$$inlined$repeat$lambda$1.invokeSuspend(LockFreedomTest.kt:15)
+	at LockFreedomTest$testLockFreedom$$inlined$repeat$lambda$1.invoke(LockFreedomTest.kt)
+	at kotlinx.atomicfu.LockFreedomTestEnvironment$TestThread.callOperation(LockFreedomTestEnvironment.kt:304)
+	at kotlinx.atomicfu.LockFreedomTestEnvironment$TestThread.run(LockFreedomTestEnvironment.kt:233)
+</failure>
+  </testcase>
+  <system-out><![CDATA[=== LockFreedomTest
+--- 0: Performed 0 operations
+Uncaught exception in thread Thread[LockFreedomTest-1,5,main]
+java.lang.AssertionError: expected:<0> but was:<26>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at kotlin.test.junit.JUnitAsserter.assertEquals(JUnitSupport.kt:32)
+	at kotlin.test.AssertionsKt__AssertionsKt.assertEquals(Assertions.kt:51)
+	at kotlin.test.AssertionsKt.assertEquals(Unknown Source)
+	at kotlin.test.AssertionsKt__AssertionsKt.assertEquals$default(Assertions.kt:50)
+	at kotlin.test.AssertionsKt.assertEquals$default(Unknown Source)
+	at BankRunner.runOperation(BankRunner.kt:25)
+	at LockFreedomTest$testLockFreedom$$inlined$repeat$lambda$1.invokeSuspend(LockFreedomTest.kt:15)
+	at LockFreedomTest$testLockFreedom$$inlined$repeat$lambda$1.invoke(LockFreedomTest.kt)
+	at kotlinx.atomicfu.LockFreedomTestEnvironment$TestThread.callOperation(LockFreedomTestEnvironment.kt:304)
+	at kotlinx.atomicfu.LockFreedomTestEnvironment$TestThread.run(LockFreedomTestEnvironment.kt:233)
+Uncaught exception in thread Thread[LockFreedomTest-3,5,main]
+java.lang.AssertionError: expected:<0> but was:<45>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at kotlin.test.junit.JUnitAsserter.assertEquals(JUnitSupport.kt:32)
+	at kotlin.test.AssertionsKt__AssertionsKt.assertEquals(Assertions.kt:51)
+	at kotlin.test.AssertionsKt.assertEquals(Unknown Source)
+	at kotlin.test.AssertionsKt__AssertionsKt.assertEquals$default(Assertions.kt:50)
+	at kotlin.test.AssertionsKt.assertEquals$default(Unknown Source)
+	at BankRunner.runOperation(BankRunner.kt:25)
+	at LockFreedomTest$testLockFreedom$$inlined$repeat$lambda$1.invokeSuspend(LockFreedomTest.kt:15)
+	at LockFreedomTest$testLockFreedom$$inlined$repeat$lambda$1.invoke(LockFreedomTest.kt)
+	at kotlinx.atomicfu.LockFreedomTestEnvironment$TestThread.callOperation(LockFreedomTestEnvironment.kt:304)
+	at kotlinx.atomicfu.LockFreedomTestEnvironment$TestThread.run(LockFreedomTestEnvironment.kt:233)
+Uncaught exception in thread Thread[LockFreedomTest-2,5,main]
+java.lang.AssertionError: expected:<0> but was:<45>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at kotlin.test.junit.JUnitAsserter.assertEquals(JUnitSupport.kt:32)
+	at kotlin.test.AssertionsKt__AssertionsKt.assertEquals(Assertions.kt:51)
+	at kotlin.test.AssertionsKt.assertEquals(Unknown Source)
+	at kotlin.test.AssertionsKt__AssertionsKt.assertEquals$default(Assertions.kt:50)
+	at kotlin.test.AssertionsKt.assertEquals$default(Unknown Source)
+	at BankRunner.runOperation(BankRunner.kt:25)
+	at LockFreedomTest$testLockFreedom$$inlined$repeat$lambda$1.invokeSuspend(LockFreedomTest.kt:15)
+	at LockFreedomTest$testLockFreedom$$inlined$repeat$lambda$1.invoke(LockFreedomTest.kt)
+	at kotlinx.atomicfu.LockFreedomTestEnvironment$TestThread.callOperation(LockFreedomTestEnvironment.kt:304)
+	at kotlinx.atomicfu.LockFreedomTestEnvironment$TestThread.run(LockFreedomTestEnvironment.kt:233)
+--- 1: Performed 249 operations
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
